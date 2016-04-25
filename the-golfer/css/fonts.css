@@ -1,0 +1,56 @@
+@font-face {
+  font-family:'WorkSans-Light';
+  src:url('../../fonts/WorkSans-Light.eot'); /* IE9 Compat Modes */
+  src:url('../../fonts/WorkSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/WorkSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/WorkSans-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../fonts/WorkSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/WorkSans-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family:'WorkSans-Extra-Light';
+  src:url('../../fonts/worksans-extralight-webfont.eot'); /* IE9 Compat Modes */
+  src:url('../../fonts/worksans-extralight-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/worksans-extralight-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/worksans-extralight-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../fonts/worksans-extralight-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/worksans-extralight-webfont.svg#WorkSans-Extra-Light') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family:'worksans-regular-webfont';
+  src:url('../../fonts/worksans-regular-webfont.eot'); /* IE9 Compat Modes */
+  src:url('../../fonts/worksans-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/worksans-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/worksans-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../fonts/worksans-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/worksans-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family:'worksans-medium-webfont';
+  src:url('../../fonts/worksans-medium-webfont.eot'); /* IE9 Compat Modes */
+  src:url('../../fonts/worksans-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/worksans-medium-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/worksans-medium-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../fonts/worksans-medium-webfont.ttf'	)  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/worksans-medium-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family:'worksans-semibold-webfont';
+  src:url('../../fonts/worksans-semibold-webfont.eot'); /* IE9 Compat Modes */
+  src:url('../../fonts/worksans-semibold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/worksans-semibold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/worksans-semibold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../fonts/worksans-semibold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/worksans-semibold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family:'BebasNeue-webfont';
+  src:url('../../fonts/BebasNeue-webfont.eot'); /* IE9 Compat Modes */
+  src:url('../../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/BebasNeue-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/BebasNeue-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../fonts/BebasNeue-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/BebasNeue-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

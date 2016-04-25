@@ -1,0 +1,1010 @@
+html {
+  -ms-overflow-style:scrollbar;
+}
+
+html {background-position:50% 50%; background-repeat:no-repeat; height:100%;}
+body {width:100%; height:100%;background-color:#19191f}
+* {margin:0; padding:0;}
+.clr {clear:both;}
+#emulated {height:100%; width:100%;}
+a,a:hover,a:active,a:focus,button:focus { outline:none}
+button::-moz-focus-inner {border: 0;}
+a:active {outline: none;}
+
+.text-justify-last-center { text-align:justify;text-align-last:center;-moz-text-align-last:center;-webkit-text-align-last:center}
+html.safari .text-justify-last-center { text-align:center}
+
+/** golfer intro section CSS **/
+#golferIntro {background:#1c1c1c;display:block; font-size:20px; height:100%; min-height:600px; position:relative; width:100%; overflow:hidden;}
+.golferIntroInner {width:100%; height:100%; display:table;}
+
+#ql-intro-img { position:absolute;background:url(../images/golfer-intro-bg.png) no-repeat center; background-attachment:fixed; background-size:cover; bottom:0; left:0; margin:0 auto; overflow:hidden; right:0; top:0; z-index:0; width:100%; height:100%; display:table-row;}
+
+#ql-bottom { float:left;width:100%;background-color:#fff; display:none}
+
+.golferIntroContent {margin:15% 0 0 0; padding:0; height:100%; vertical-align:middle; display:table-cell; width:100%; position:relative;z-index:1}
+.golferIntroContent h3 {color:#fff; font-size:16px; font-family:'WorkSans-Light'; text-transform:uppercase; margin:0px;}
+.golferIntroContent h1 {color:#006bbd; font-size:67px; font-family:'BebasNeue-webfont'; text-transform:uppercase; letter-spacing:4px; margin:25px auto; padding:0;}
+.popupLink a {background:#fff url("../images/play-btn.png") no-repeat scroll 17px 50%; border-radius:50px; display:inline-block; height:40px; margin:16px 0 18px; transition:all 0.4s ease 0s; width:40px;}
+.popupLink a:hover {background-color:#006bbd; background-position:-23px 50%;}
+.popupText {font-family:'worksans-medium-webfont'; font-size:9px; color:#fff; letter-spacing:3px; text-transform:uppercase;}
+
+
+/*#golferIntro a.down-arrow, #golferIntro a.down-arrow span {transition: all 0.4s ease 0s;}
+#golferIntro a.down-arrow, a.down-arrow span {-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-o-transition: all 0.4s ease}
+#golferIntro a.down-arrow {margin:0 auto;position:absolute;bottom:15px;left:0;right:0;border:1px #ffffff solid; width:33px;height:33px;border-radius:100%;-moz-border-radius:100%;-webkit-border-radius:100%; z-index:2}
+#golferIntro a.down-arrow span.btn-area { position:absolute;top:6px;left:0;right:0;margin:0 auto;border:1px #ffffff solid;width:9px;height:18px;border-top-left-radius: 2em;border-top-right-radius: 2em; border-bottom-left-radius: 2em;border-bottom-right-radius: 2em; text-align:center;-webkit-animation:downArrow ease-out infinite 1s; animation: downArrow ease-out infinite 1s;}
+#golferIntro a.down-arrow span.btn-area span {width:1px;height:4px;background-color:#fff;display:inline-block;position:absolute;top:2px;left:3px;-webkit-animation:downArrowDot ease-in-out infinite 1s; animation: downArrowDot ease-in-out infinite 1s;}
+#golferIntro a.down-arrow:hover { bottom:25px}
+#golferIntro a.down-arrow:hover span.btn-area { background-color:#fff}
+#golferIntro a.down-arrow:hover span.btn-area span { top:10px;background-color:#000}*/
+
+
+#golferIntro a.down-arrow, 
+#golferIntro a.down-arrow span {-webkit-transition: all 0.4s ease;-moz-transition: all 0.4s ease;-o-transition: all 0.4s ease}
+#golferIntro a.down-arrow { margin:0 auto;position:absolute;bottom:20px;left:0;right:0;border:1px #ffffff solid;width:28px;height:40px;border-top-left-radius: 2em;border-top-right-radius: 2em; border-bottom-left-radius: 2em;border-bottom-right-radius: 2em; z-index:4}
+#golferIntro a.down-arrow span.btn-area { position:absolute;top:9px;left:0;right:0;margin:0 auto; background-color:#ffffff;width:4px;height:4px;border-top-left-radius: 2em;border-top-right-radius: 2em; border-bottom-left-radius: 2em;border-bottom-right-radius: 2em; text-align:center;-webkit-animation:downArrowDot ease-in-out infinite 1s; animation: downArrowDot ease-in-out infinite 1s;}
+
+#golferIntro a.down-arrow:hover { bottom:25px}
+#golferIntro a.down-arrow:hover span.btn-area { background-color:#fff}
+
+#ql-intro-sec-text { display:none;position:absolute;top:0;right:0;left:0;margin:auto;bottom:0;height:450px;z-index:1;letter-spacing:3px;text-transform:uppercase;width:710px}
+#ql-intro-sec-text .ql-heading-wwd {font-family:'WorkSans-Light';font-size:21px;color:#006bbd;text-transform:uppercase;letter-spacing:3px}
+#ql-intro-sec-text h2 { margin:25px 0;color:#ffffff;font-size:49px;text-transform:uppercase;font-family:'BebasNeue-webfont';letter-spacing:3px}
+#ql-intro-sec-text .ql-short-text,
+#ql-intro-sec-text .ql-services ul li { font-family:'WorkSans-Light';text-transform:none;color:#a09f9f;font-size:13px;letter-spacing:0.05em;line-height:25px}
+#ql-intro-sec-text .ql-services { margin:50px 0 76px}
+#ql-intro-sec-text .ql-services ul { margin:0;padding:0;list-style:none;}
+#ql-intro-sec-text .ql-services ul li { display:inline-block;text-transform:uppercase; width:100px;vertical-align:top;line-height:normal;font-size:9px}
+#ql-intro-sec-text .ql-services ul li .row { margin-top:19px}
+#ql-intro-sec-text .ql-short-text { padding:0 80px}
+
+.golfer-bottom { height:100%; width:100%; display:none}
+
+/** golferOutcomes section CSS **/
+#golferOutcomes {margin:0; padding:100px 0; position:relative; overflow:hidden;}
+/*.golferOutcomesProductImage {text-align:center;}
+.golferOutcomesProductImage img {max-width:100%;}*/
+.golferOutcomesImages {width:600px; min-height:522px; margin:0 auto 0 auto; position:relative;}
+.golferOutcomesImages img {position:absolute;}
+.image1 {left:-169px; top:0; width:auto; z-index:0}
+/*.image2 {right:50px; top:-107px; width:350px; z-index:2}
+.image3 {right:-250px; bottom:-39px; width:485px; z-index:3}
+.image4 {right:-200px; bottom:50px; width:400px;}*/
+.image4 {bottom:96px; right:-212px; width:290px; z-index:1;}
+.golferOutcomesProductOuter {margin-right:-125px;}
+.golferOutcomesContent {margin:0; padding:0 0; text-align:center;}
+.golferOutcomesContent h2 {font-family:'worksans-medium-webfont'; font-size:15px; text-transform:uppercase; color:#19191f; letter-spacing:10px; padding:100px 0 90px 24px; margin:0px;}
+.golferOutcomesContent h3 {font-family:'WorkSans-Light'; font-size:16px; color:#19191f; margin:0 0 15px 0;}
+.golferOutcomesContent h1 {font-family:'BebasNeue-webfont'; font-size:45px; color:#19191f; letter-spacing:1px; margin:0px; padding:20px 10px 50px;}
+.golferOutcomesContent p {color:#19191f; font-size:16px; line-height:28px; font-family:'WorkSans-Light'; padding:10px 16px;}
+.golferOutcomesContent p.paddingLeftRight20 {padding:20px 30px 0 20px;}
+
+/** golferIphone **/
+#golferIphone {height:100%; min-height:1000px; position:relative; width:100%; background:url(../images/tablet-bg.jpg) no-repeat top center; background-attachment:fixed; background-size:cover;}
+.golferIphoneImage {position:absolute; bottom:-33%; right:0px; width:75%; height:auto; z-index:1; text-align:right;}
+.golferIphoneImage img {max-width:1130px; width:100%}
+
+/** strategy section CSS **/
+#golferStrategy {margin:0px; overflow-x: hidden; /*padding:70px 0;*/ padding:0; position:relative; background:#006bbd; /*overflow:hidden;*/}
+.golferGreenSection {background:#006bbd; width:100%; height:100%; /*margin-bottom:250px;*/ position:relative;}
+.golferGreenSection:after {width:100%; position:absolute; bottom:0; height:680px; content:""; background:#006bbd;}
+.whiteSection {background:#fff; width:100%;}
+.golferStrategyContainer {display:table; width:100%; height:100%;}
+.golferStrategyContent {/*display:table-cell; vertical-align:middle;*/}
+.golferStrategyContent h2 {font-family:'worksans-semibold-webfont'; color:#fff; font-size:15px; text-transform:uppercase; letter-spacing:10px; text-align:center; padding:150px 0; margin-top:51px;}
+.golferStrategyContent p {font-family:'worksans-regular-webfont'; color:#fff; font-size:17px; padding-bottom:10px;}
+.golferStrategyContent h1 {font-family:'BebasNeue-webfont'; font-size:45px; color:#fff; letter-spacing:1px; margin:20px 0 15px 0 !important; padding:10px 0; text-align:center;}
+.golferPortfolioImage {width:100%; height:100%; position:relative; z-index:1; /*background:#fff; height:570px; margin-top:1500px;*/}
+.golferPortfolioImage img {width:100%; /*position:absolute; bottom:0;*/}
+
+/** theWork section CSS **/
+#theWork {width:100%; /*height:100%;*/ position:relative;}
+#theWork h1 {width:100%; padding:155px 0 150px; margin:0px; font-size:14px; color:#19191f; font-family:'worksans-medium-webfont'; text-align:center; text-transform:uppercase; letter-spacing:9px; clear:both;}
+.workVideo {height:85%; min-height:800px; width:100%; text-align:center;margin-bottom:-1px}
+.workVideoInner {width:100%; height:100%; display:table;}
+.workVideobg {bottom:0; left:0; margin:0 auto; overflow:hidden; right:0; top:0; z-index:0; width:100%; height:100%; display:table-row; background-size:cover;}
+.workVideoContent {margin:15% 0 0 0; padding:0; height:100%; vertical-align:middle; display:table-cell; width:100%; position:relative;}
+
+.workLeftImage {width:60%; float:left;}
+.workRightImage {width:40%; float:left;}
+.workLeftImage img, .workRightImage img {width:100%;}
+.relativePosition {position:relative;}
+.relativePosition:hover .workLeftImage {background-color:#000;}
+.relativePosition:hover .workRightImage {background-color:#000;}
+.relativePosition:hover .workLeftImage img {opacity:0.5;}
+.relativePosition:hover .workRightImage img {opacity:0.5;}
+.workLeftImage:hover img {opacity:1 !important;}
+.workRightImage:hover img {opacity:1 !important;}
+
+/** sectionNine section css **/
+#sectionNine {height:auto; margin-bottom:-1px; position:relative; float:left; background-color:transparent}
+#sectionNine .brv-gallery-thumb {position:relative; z-index:0;}
+#sectionNine .brv-gallery-thumb > div {float:left;}
+#sectionNine .brv-gallery-thumb > div > a {float:left; width:100%; background-color:#000;}
+#sectionNine .brv-gallery-thumb:hover > div img {opacity:0.5; /*-webkit-transition: all 0.4s;-moz-transition: all 0.4s;-o-transition: all 0.4s*/}
+#sectionNine .brv-gallery-thumb:hover > div:hover img {opacity:1;}
+#sectionNine .brv-gallery-thumb img {width:100%; height:auto;}
+
+#sectionNine .brv-thumb1-1 {width:40%;}
+#sectionNine .brv-thumb1-2 {width:60%;}
+#sectionNine .brv-thumb1-3 {width:20%;}
+#sectionNine .brv-thumb1-4 {width:40%; height:300px;}
+
+
+
+#sectionNine .brv-thumb-1, #sectionNine .brv-thumb-2, #sectionNine .brv-thumb-3, #sectionNine .brv-thumb-4, #sectionNine .brv-thumb-6 {width:20%;}
+#sectionNine .brv-thumb-5, #sectionNine .brv-thumb-7 {width:40%;}
+#sectionNine .brv-gallery-screen { position:absolute;top:0;left:0;z-index:1; background-color:#fff; width:100%; height:100%; overflow:hidden}
+#sectionNine .brv-gallery-screen, #sectionNine .brv-gallery-screen > div {display:none; width:100%; height:100%; background-color:#fff}
+#sectionNine .brv-gallery-screen img {width:100%; height:auto; transition:opacity .6s linear .85s; position:absolute; top:0; left:0;}
+#sectionNine .brv-close-gallery {position:absolute; top:20px; right:20px; color:#000; width:29px; height:29px; text-align:center; line-height:25px; border:1px #000 solid; z-index:10; border-radius:50px; -moz-border-radius:50px; -webkit-border-radius:50px; font-family:'WorkSans-Light'; font-size:14px; text-decoration:none;}
+#sectionNine .brv-close-gallery.invert {color:inherit; border-color:#19191f;}
+/**#sectionNine div:nth-child(3) {display:none;}**/
+.img-pan-container {width:100%; height:100%; cursor:crosshair}
+
+/** articleNavigation **/
+#articleNavigation {width:100%; min-height:170px;float:left; margin-top:45px}
+.prevArticle, .nextArticle {background-color:#000;}
+.prevArticle img, .nextArticle img {width:100%;}
+.prevArticle a, .nextArticle a {padding:0; text-align:center; text-transform:uppercase; color:#fff;}
+.prevArticle a h2, .nextArticle a h2 {bottom:0; font-family:'BebasNeue-webfont'; font-size:31px; font-weight:normal; height:80px; left:0; letter-spacing:2px; line-height:37px; margin:auto 0; position:absolute; right:0; top:0; z-index:1;}
+.prevArticle a h2 span, .nextArticle a h2 span {display:block; font-family:'worksans-semibold-webfont'; font-size:12px; letter-spacing:1px;}
+.prevArticle img, .nextArticle img {opacity:0.4; position:relative; z-index:0;}
+.prevArticle:hover img {opacity:0.80;}
+.nextArticle:hover img {opacity:1;}
+
+
+/** footer css **/
+#footer {background:#19191f; padding:50px; overflow:hidden;}
+#footer ul {margin:0; padding:0;}
+#footer ul li {display:block; font-size:11px; line-height:40px; text-align:center}
+#footer ul li a {color:#fff; text-transform:uppercase; text-align:center; line-height:35px; font-family:'worksans-regular-webfont'; -webkit-transition:all 0.4s ease; -moz-transition:all 0.4s ease; -o-transition:all 0.4s ease; text-decoration:none}
+#footer ul li a:hover {color:#ee2966; text-decoration:none;}
+
+/** popup css **/
+.center_popup {display:none; position:absolute; width:100%; height:100%; top:0; text-align:center}
+.center_popup_box {position:relative;background:url(../images/v-loading.gif) no-repeat 50% 50% #fff; overflow:hidden}
+.center_popup_box, .center_popup_box iframe {width:820px;height:550px}
+.center_popup_close {margin:10px 15px;position:absolute;top:0;right:0;}
+.div-middle {display:inline-block; vertical-align:middle; text-align:left;}
+.second {display:inline-block; vertical-align:middle; height:100%;}
+.nopadding {padding:0px;}
+.workPaddingBot100 {padding-bottom:100px;}
+.workLeftLarge, .workRightLarge {position:absolute; width:100%; height:100%; display:none; z-index:1; background:rgba(28, 28, 28, 0.8) !important;}
+.workLeftLarge img, .workRightLarge img {width:100%;}
+.close-btn {width:29px; height:29px; position:absolute; right:20px; top:20px; cursor:pointer;}
+
+html.desktop .center_popup_box { height:549px}
+html.desktop.no-smil.win .center_popup_box iframe { width:822px;height:550px}
+
+/*For Mac Safari*/
+html.mac.desktop.safari #golferIntro .center_popup_box { width:737px;height:500px}
+html.mac.desktop.safari #golferIntro .center_popup_box iframe { width:741px;height:502px}
+
+/** work popup css **/
+.work_center_popup {display:none; position:absolute; width:100%; height:100%; top:0; text-align:center;}
+.work_center_popup_box {background:url(../images/v-loading.gif) no-repeat center center #fff; width:880px; height:550px; position:relative;}
+.work_center_popup_box iframe {width:880px; height:550px;}
+.work_center_popup_close {margin:10px 15px;position:absolute;top:0;right:0}
+.work_div-middle {display:inline-block; vertical-align:middle; text-align:left;}
+.work_second {display:inline-block; vertical-align:middle; height:100%;}
+.work_close-btn {width:29px; height:29px; position:absolute; right:20px; top:20px; cursor:pointer;}
+
+/** navigation css **/
+#header {background-color:#fff}
+#header .th-nav-btn {position:fixed;top:20px;right:25px; z-index:11;}
+#header .brv-logo {margin:44px 0 12px 0;width:181px;height:auto;/*image-rendering: auto;*/image-rendering: crisp-edges;/*image-rendering: pixelated;*/}
+#header .headerTittle {position:fixed;top:23px;left:30px;font-family:'WorkSans-Extra-Light';font-size:16px;z-index:10}
+#header .headerTittle a {text-decoration:none;color:#19191f}
+#header .headerTittle a:hover {color:#d71635}
+
+#mobile {display:none;}
+#desktop {display:block;}
+.mobileNav {display:none;}
+.desktopNav {display:block;}
+#th-nav {right:-250px;height:100%;background-color:#fff;width:240px;text-align:right;box-shadow:-1px 0 3px rgba(0,0,0,0.3);}
+#th-nav ul {list-style:none; float:left; width:100%;}
+#th-nav ul li {width:100%}
+#th-nav ul li a {color:#19191f; text-decoration:none; text-transform:uppercase; -webkit-transition:all 0.4s ease; -moz-transition:all 0.4s ease; -o-transition:all 0.4s ease; font-family:"worksans-medium-webfont"; padding:0;}
+#th-nav ul li a:hover,#th-nav ul li a:focus {background-color:transparent;}
+#th-nav ul:nth-child(1) {line-height:45px;}
+#th-nav ul:nth-child(1) li a {font-family:"WorkSans-Extra-Light"; font-size:25px;}
+#th-nav ul:nth-child(2) {margin:9px 0 25px; padding-left:15px}
+#th-nav ul:nth-child(2) li a, #th-nav ul:nth-child(3) li a {font-size:10px;}
+#th-nav ul:nth-child(2) li {padding:3px 0;}
+#th-nav ul:nth-child(3) {line-height:23px;}
+#th-nav ul li a:hover, #th-nav ul li.active a {color:#d71635;}
+#mainNav ul li a:hover, #mainNav ul li.active a {color:#d71635;}
+#th-nav .th-vm {position:absolute; top:0; bottom:0; margin:auto; height:205px; width:100%;}
+#th-nav .th-nav-close {float:right;margin:25px 30px 0 0;}
+#mainNav {background-color:#fff; width:100%;}
+#header:after {background:url(../images/header-bg.png) no-repeat center 100%; position:absolute; content:" "; bottom:-8px; width:100%;height:8px; left:0; right:0}
+#mainNav ul {list-style:none; background:#fff; position:relative; width:100%;margin-top:20px}
+#mainNav ul li {display:inline-block; float:none; /*padding:0 33px;*/ padding:10px 0; margin:0 29px;}
+
+#mainNav ul li a {font-size:9px; color:#19191f; text-decoration:none; text-transform:uppercase; -webkit-transition:all 0.4s ease; -moz-transition:all 0.4s ease; -o-transition:all 0.4s ease; font-family:"worksans-medium-webfont"; line-height:20px; padding:0px;}
+
+#mainNav ul li a:hover, #mainNav ul li a:focus {background-color:transparent;}
+#mainNav ul li a:hover, #mainNav ul li.active a {color:#d71635;}
+#mainNav ul li.active {border-bottom:2px solid #d71635;}
+/*#mainNav ul li.active a {background-image:url(../../the-golfer/images/nav-active.jpg) bottom; background-repeat:repeat-x;}*/
+#mainNav .th-vm {text-align:center;}
+#mainNav .th-nav-close {float:right; margin:25px 30px 0 0;}
+
+
+
+.desktopImage {display:block;}
+.mobileImage {display:none;}
+.house-text {font-family:'quatro_slabbold' !important; font-size:30px !important; text-transform:uppercase; color:#ffffff; }
+.house-text span {font-family:'quatro_slabregular' !important; font-size:36px !important; text-transform:lowercase; color:#ffffff;float:left; margin-left:36%; letter-spacing: 0px !important; }
+.house-section {width:100%; height:auto; margin:16px 0 0 0; padding:0; float:left; background:url(../images/bg-repeat-house.jpg) no-repeat center bottom; display:block;}
+
+.house-section1 {width:100%; height:auto; margin:16px 0 0 0; padding:0; float:left; background:url(../images/bg-repeat-house.jpg) no-repeat center bottom; display:none;}
+
+.house-container {width:1178px; height:auto; margin:0 auto;}
+.house-hand-left {float:left; height:auto; margin-top:-4px; max-width:532px; width:100%; position:relative; top:-4px;}
+.loan-amount {max-width:500px; width:100%; height:auto; float:left; position:relative; top:16px;}
+
+/** house section CSS **/
+
+#house {background: #fff none repeat scroll 0 0;  margin: 0;  padding: 0;  position: relative;}
+.houseSection {background: #006bbd none repeat scroll 0 0; height:100%; position:relative; width:100%;}
+.houseContainer {width:100%; overflow:hidden;}
+.houseContent {}
+.houseContent h2 {color: #fff; font-family: "worksans-semibold-webfont"; font-size: 14px;letter-spacing: 10px; margin-top: 0;
+    padding: 155px 0 100px; text-align: center; text-transform: uppercase;}
+.houseContent h1 {color:#fff; font-family: "BebasNeue-webfont"; font-size:45px; letter-spacing:1px; margin:20px 0 15px !important;
+    padding: 10px 0; text-align: center;}
+.houseContent p {color:#fff; font-family: "worksans-regular-webfont"; font-size:17px; padding-bottom:10px; text-align:center;}
+.housePortfolioImage {height:100%; position:relative; width:100%; z-index: 1;}
+.housePortfolioImage img {width:100%;}
+
+.golferStrategyContent p.para-space {margin:200px 0 0 0;}
+.brv-img-container {bottom:-1%; left:0;margin:0 auto; position:absolute; right:0; width:500px;}
+.brv-macbook {bottom: -4px; position: absolute; left:403px; z-index:0;}
+.brv-ipad {bottom:-7px; left:-220px; position: absolute; z-index: 1;}
+.brv-iphone {bottom: -10px; left:82px; position:absolute; z-index: 2;}
+.brv-row {float:left; height:100%; min-height:600px; overflow:hidden; position:relative; width:100%; z-index:0;Background:#006bbd;
+}
+.brv-row3 {float:left; height:100%; min-height:710px; overflow:hidden; position:relative; width:100%; z-index:0;}
+.brv-row1 {float:left; height:100%; /*min-height:710px;*/ overflow:hidden; position:relative; width:100%;z-index:0;background:#fff;}
+
+/**.brv-row1 {min-height: 250px !important;}***/
+.align-left {float:left;}
+.align-right {float:right;}
+.display-none {display:none;}
+.display-block {display:block;}
+.visible-no {display:block;}
+.visible-yes {display:none;}
+
+a.navButton {
+    display: block;
+    height: 9px;
+    outline: medium none;
+    position: fixed;
+    right: 33px;
+    top: 24px;
+    width: 16px;
+    z-index: 99;
+}
+a.navButton > span {
+    background: #000 none repeat scroll 0 0;
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+a.navButton > span + span {
+    margin-top: 3px;
+}
+a.navButton > span + span {
+    margin-top: 3px;
+}
+nav.navigation {display: block; width: 234px;  position: fixed; right: -244px; background: #fff; z-index: 99; top: 0; bottom: 0;
+    overflow: hidden;}
+nav.navigation .crossIconImg {
+    cursor: pointer;
+    position: absolute;
+    right: 33px;
+    top: 24px;
+    z-index: 1;
+}
+nav.navigation > section {
+    bottom: 0;
+    display: block;
+    height:300px;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+nav.navigation > section div {display:block; width:100%; overflow:hidden;}
+nav.navigation a {color: #11171f; display: block; font: 300 1.51em/1 "Work Sans",sans-serif; margin-bottom: 15px; margin-right: -150px; outline: medium none; text-align: right; transition: all 0.4s ease-out 0s; width:auto; font-size:26px;}
+nav.navigation a:hover, nav.navigation a:active {text-decoration:none; color:#f31858;}
+
+nav.navigation > section div {display: block;width: 100%; overflow: hidden;}
+nav.navigation .socialNetworkingContainer a {font: 500 .6em/1 'Work Sans', sans-serif;  margin-bottom:10px; margin-top:15px; font-size:10px !important;}
+.mobileNav {font: 500 0.6em/1 "Work Sans",sans-serif; margin-bottom:10px; margin-top:15px;}
+nav.navigation a.mobile-view {display:none !important; font: 500 0.6em/1 "Work Sans",sans-serif;}
+nav.navigation .spacing-top {margin-top:25px !important; float:left; display:none;}
+
+
+
+html.desktop.gecko.win #ql-intro-img, html.desktop.gecko.win #golferIphone { background-attachment:scroll}
+html.desktop.gecko.win #house { margin-top:-2px}
+/*html.desktop.gecko.win .golferIntroContent { position:static}*/
+
+@supports (-ms-accelerator:true) {
+	
+	html.desktop.webkit.win #ql-intro-img, html.desktop.webkit.win #golferIphone { background-attachment:scroll}
+	html.desktop.webkit.win #house { margin-top:-2px}
+
+}
+
+
+@media only screen and (max-width: 699px) and (min-width: 600px) {
+	#ql-intro-sec-text {
+		width: 580px;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 599px) and (min-width: 500px) {
+	#ql-intro-sec-text {width:480px;height:530px;padding:0}	
+	#ql-intro-sec-text h2 { padding:0 110px}
+	#ql-intro-sec-text .ql-short-text { padding:0 40px}
+	#ql-intro-sec-text .ql-services ul li { width:78px}
+}
+
+@media only screen and (max-width: 499px) and (min-width: 400px) {
+	#ql-intro-sec-text {width:380px;height:585px;padding:0}	
+	#ql-intro-sec-text h2 { padding:0 60px}
+	#ql-intro-sec-text .ql-short-text { padding:0 30px}
+	#ql-intro-sec-text .ql-services ul li { width:63px}
+}
+
+
+
+/*@-webkit-keyframes downArrow {
+	0%,100% {background-color:transparent}
+	50% {background-color:#fff}
+}
+@-moz-keyframes downArrow {
+	0%,100% {background-color:transparent}
+	50% {background-color:#fff}
+}
+@keyframes downArrow {
+	0%,100% {background-color:transparent}
+	50% {background-color:#fff}
+}
+
+@-webkit-keyframes downArrowDot {
+	0%,100% {top:2px;background-color:#fff}
+	50% {top:10px;background-color:#000}
+}
+@-moz-keyframes downArrowDot {
+	0%,100% {top:2px;background-color:#fff}
+	50% {top:10px;background-color:#000}
+}
+@keyframes downArrowDot {
+	0%,100% {top:2px;background-color:#fff}
+	50% {top:10px;background-color:#000}
+}*/
+
+@-webkit-keyframes downArrowDot {
+	0%,100% {top:9px}
+	50% {top:15px}
+}
+@-moz-keyframes downArrowDot {
+	0%,100% {top:9px}
+	50% {top:15px}
+}
+@keyframes downArrowDot {
+	0%,100% {top:9px}
+	50% {top:15px}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+.center_popup {
+    display: none;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+}
+.full-width {width:100%; height:100%; margin:0; padding:0; float:left;}
+#th-nav ul li.animated {-webkit-animation-duration:0.5s;animation-duration:0.5s}
+/** new media queries **/
+@media only screen and (min-width:320px) and (max-width:991px) {
+	nav.navigation a.mobile-view {display:block !important; font: 700px 11px "Work Sans",sans-serif; text-transform:uppercase; font-size:10px !important;}
+	.desktopImage {display:none;}
+	.mobileImage {display:block;}
+	#sectionNine .brv-thumb-1, #sectionNine .brv-thumb-2, #sectionNine .brv-thumb-3, #sectionNine .brv-thumb-4,#sectionNine .brv-thumb-6 {width:50%;}
+	#sectionNine .brv-thumb-6 {display:none;}
+	#sectionNine div:nth-child(3) {display:block;}
+	#sectionNine .brv-thumb-5, #sectionNine .brv-thumb-7 {width:100%;}
+	#sectionNine .brv-gallery-screen, #sectionNine .brv-gallery-screen div {min-height:inherit; background-color:rgba(0,0,0,0.5);}
+	#sectionNine .brv-gallery-screen img { top:0 !important;}	
+	#golferOutcomes {padding:100px 0;}
+	.mobileNav {display:block;}
+	.desktopNav {display:none;}
+	#th-nav .th-vm { height:340px}
+	#header .brv-logo { margin-top:24px}
+	#header .headerTittle { left:0; width:100%}
+	.center_popup_box { width:100%; height:100%; background-image:url(../images/v-loading.gif); background-color:rgba(28,28,28,0.7)}
+	.center_popup_box iframe { display: inline-block;vertical-align: middle; width:650px; height:435px; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto}
+	.center_popup_close { top:55px}
+	
+	.workVideo .work_center_popup_box { width:100%; height:100%; background:url(../images/v-loading.gif) no-repeat 50% 50% rgba(28,28,28,0.7)}
+	.workVideo .work_center_popup_box iframe { display: inline-block;vertical-align: middle; width:650px; height:435px; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto}
+	.workVideo .work_center_popup_close { top:10px}
+	
+.align-left {float:right !important;}
+.align-right {float:left !important;}
+
+.house-section1 {width:100%; height:auto; margin:16px 0 0 0; padding:0; float:left; background:url(../images/bg-repeat-house.jpg) no-repeat center bottom; display:block !important;}
+.house-section {width:100%; height:auto; margin:16px 0 0 0; padding:0; float:left; background:url(../images/bg-repeat-house.jpg) no-repeat center bottom; display:none !important;}
+	
+.house-hand-left {float:left; height:auto; margin-top:-4px; max-width:100%; width:100%; }
+.loan-amount {max-width:100%; width:100%; height:auto; float:left;}	
+.house-text span {text-align:center;  float:none; margin-left:auto; font-size:29px}
+.house-text {font-size: 29px !important;}
+.visible-no {display:block}
+.visible-yes {display:none}
+#sectionNine .brv-thumb1-1 {width:100%;}
+#sectionNine .brv-thumb1-2 {width:100%;}
+#sectionNine .brv-thumb1-3 {width:50%;}
+#sectionNine .brv-thumb1-4 {width:50%;}
+#sectionNine .brv-gallery-thumb img {width:100%;}
+.img-height {width:100%;}
+#theWork h1 {padding:100px 0;}
+.golferOutcomesContent h2 {padding:100px 0 90px 24px;}
+#sectionNine { min-height:inherit;}
+.visible-no {display:none !important;}
+.visible-yes {display:block !important;}
+
+#sectionNine .th-gallery-screen img { top:0 !important}
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+	
+	#golferIntro { min-height:100%}
+	#header .th-nav-btn { right:15px}
+	.golferIntroContent h3 {margin:10px 0;}
+	/*.golferIntroContent h1 {font-size:43px; max-width:100%; padding:0 15px;}*/
+	.golferIntroContent h1 {font-size:34px !important; margin:0px; padding:0 20px 10px 20px; line-height:34px; max-width:100%;}
+	.popupLink a {background:#fff url("../images/play-btn.png") no-repeat scroll 12px 50%; height:30px; margin:0 0 10px 0; width:30px;}
+	.center_popup_box, .work_center_popup_box {width:100%; height:100%;}
+	.center_popup_box iframe, .work_center_popup_box iframe {width:290px; height:176px; bottom:0; left:0; margin:auto; position:absolute; right:0; top:0;}
+	.golferOutcomesImages {width:280px; min-height:120px; margin:0 auto 50px auto;}
+	.image1 {left:0; top:0; width:270px;}
+	.image2 {right:79px; top:-22px; width:90px;}
+	.image3 {bottom:-52px; right:0; width:128px;}
+	.image4 {bottom:-19px; right:9px; width:92px; z-index:1;}
+	#golferIphone {background:url(../images/mobo-golferIphone.png) no-repeat scroll center top / cover;min-height:100%}
+	.golferIphoneImage {bottom:-12%; right:0; width:90%;}
+	.golferIphoneImage img {width:100%;}
+	#golferOutcomes {padding:100px 0 50px 0;}
+	.golferOutcomesContent {padding:0px;}
+	.golferOutcomesContent h1 {padding:20px 0 0 0;font-size:30px}
+	.golferOutcomesContent h2 {padding:80px 0 50px 0;}
+	.golferOutcomesContent p {padding:30px 30px 0;font-size:14px}
+	.golferStrategyContent h1 {margin:20px 0 33px 0 !important;font-size:30px}
+	.golferStrategyContent h2 {padding:70px 0;}
+	.golferOutcomesContent p.paddingLeftRight20 { padding:20px 31px 0}
+	
+	#theWork h1 {padding:100px 0;}
+	.workVideo { min-height:500px}
+	.workVideobg {background:url(../images/mobo-work-video-bg.png) no-repeat scroll center; background-attachment:scroll; background-size:cover;}
+	#sectionNine {min-height:146px;}
+	#articleNavigation h2 {font-size:20px; line-height:23px;}
+	#articleNavigation h2 span {font-size:10px;}
+	#mobile {display:block; position:relative; z-index:0;}
+	#desktop {display:none;}
+	.mobileNav {display:block;}
+	.desktopNav {display:none;}
+	.headerTittle {float:none; position:static; width:100%; background:#fff;}
+	.golferGreenSection::after {height:114px;}
+	#sectionNine div:nth-child(3) img { width:99.75%}
+	
+	#th-nav .th-vm { height:335px}
+	.th-vm { height:335px}
+	.prevArticle a h2, .nextArticle a h2 { height:46px}	
+	#footer { padding:20px 50px}
+	.house-text span {margin-right:0 !important; float:none !important;}
+	.loan-amount {padding:50px 0;}
+	.brv-img-container {transform:scale(0.30); -webkit-transform:scale(0.30);width: 100%;}
+	.brv-img-container {left:-60px;}
+	.brv-row {min-height:250px !important;}
+	.brv-row3 {min-height:250px !important;}
+	.houseContent h2 {padding:100px 0 50px; margin-top:0;}
+	.golferStrategyContent p.para-space {margin:100px 0 0 0}
+	.golferStrategyContent p {font-size:14px; line-height:28px}
+	#sectionNine .brv-thumb1-4 {height:auto !important;}
+}
+@media only screen and (min-width:375px) and (max-width:480px) {
+	
+}
+
+@media only screen and (min-width:481px) and (max-width:640px) {
+	.golferIntroContent h3 {margin-bottom:20px;}
+	/*.golferIntroContent h1 {font-size:43px; max-width:100%; padding:0 15px;}*/
+	.golferIntroContent h1 {font-size:34px !important; margin:0px; padding:0 20px 10px 20px; line-height:44px; max-width:100%;}
+	.popupLink a {background:#fff url("../images/play-btn.png") no-repeat scroll 12px 50%; height:30px; margin:0 0 10px 0; width:30px;}
+	.center_popup_box, .work_center_popup_box {width:100%; height:100%;}
+	.center_popup_box iframe, .work_center_popup_box iframe {width:290px; height:176px; bottom:0; left:0; margin:auto; position:absolute; right:0; top:0;}
+	.golferOutcomesImages {width:440px; min-height:120px; margin:50px auto 130px auto;}
+	.image1 {left:0; top:-6px; width:428px;}
+	.image2 {right:134px; top:-45px; width:140px;}
+	.image3 {bottom:-136px; right:0; width:216px;}
+	.image4 {bottom:-88px; right:7px; width:150px; z-index:1;}
+	#golferIphone {background:url(../images/mobo-golferIphone.png) no-repeat scroll center top / cover;min-height:650px}
+	.golferIphoneImage {bottom:-12%; right:0; width:90%;}
+	.golferIphoneImage img {width:100%;}
+	#golferOutcomes {padding:50px 0;}
+	.golferOutcomesContent {padding:0px;}
+	.golferOutcomesContent h1 {padding:20px 0 0 0;}
+	.golferOutcomesContent h2 {padding:100px 0 70px;}
+	.golferOutcomesContent p {padding-top:30px !important;}
+	.golferStrategyContent h1 {margin:20px 0 33px 0 !important;}
+	.golferStrategyContent h2 {padding:70px 0;}
+	#theWork h1 {padding:100px 0;}
+	.workVideobg {background:url(../images/mobo-work-video-bg.png) no-repeat scroll center; background-attachment:scroll; background-size:cover;}
+	#golferStrategy {padding:0;}
+	#house-money {padding:0;}
+	#sectionNine {min-height:261px;}
+	#footer {padding:20px 50px;}
+	#mobile {display:block; position:relative; z-index:0;}
+	#desktop {display:none;}
+	.mobileNav {display:block;}
+	.desktopNav {display:none;}
+	#header .headerTittle { left:0}
+	.headerTittle { position:static; width:100%}
+	#sectionNine div:nth-child(3) img { width:99.70%}
+	
+	.golferGreenSection:after { height:160px}
+	.house-text span {margin-right:0 !important; float:none !important;}
+	.loan-amount {padding:50px 0;}
+	.brv-img-container {transform:scale(0.45); width: 100%; margin:0 auto;}
+	.brv-row {min-height:250px !important;}
+	.brv-row3 {min-height:250px !important;}
+	.houseContent h2 {padding:100px 0 70px;}
+}
+
+@media only screen and (min-width:641px) and (max-width:768px) {
+.golferIntroContent h3 {margin-bottom:20px;}
+/*.golferIntroContent h1 {font-size:43px; max-width:100%; padding:0 15px;}*/
+.golferIntroContent h1 {font-size:50px; margin:0px; padding:0 20px 10px 20px; line-height:44px; max-width:100%;}
+.popupLink a {background:#fff url("../images/play-btn.png") no-repeat scroll 12px 50%; height:30px; margin:0 0 10px 0; width:30px;}
+.center_popup_box, .work_center_popup_box {width:100%; height:100%;}
+.center_popup_box iframe, .work_center_popup_box iframe {width:290px; height:176px; bottom:0; left:0; margin:auto; position:absolute; right:0; top:0;}
+.golferOutcomesImages {width:440px; min-height:120px; margin:50px auto 130px auto;}
+.image1 {left:0; top:0; width:598px;}
+/*.image2 {right:166px; top:-70px; width:210px;}*/
+.image2 {right:166px; top:-54px; width:193px;}
+.image3 {bottom:-188px; right:2px; width:266px;}
+.image4 {bottom:-88px; right:7px; width:150px; z-index:1;}
+#golferIphone {background:url(../images/mobo-golferIphone.png) no-repeat scroll center top / cover; min-height:800px}
+.golferIphoneImage {bottom:-12%; right:0; width:90%;}
+.golferIphoneImage img {width:100%;}
+#sectionNine {min-height:338px;}
+	
+.golferOutcomesContent {padding:0px;}
+.golferOutcomesContent h1 {padding:20px 0 0 0;}
+.golferOutcomesContent h2 {padding:80px 0 70px;}
+.golferOutcomesContent p {padding-top:30px !important;}
+.golferStrategyContent h1 {margin:20px 41px 33px !important}
+.golferStrategyContent h2 {padding:70px 0;}
+#theWork h1 {padding:100px 0;}
+.workVideobg {background:url(../images/mobo-work-video-bg.png) no-repeat scroll center; background-attachment:scroll; background-size:cover;}
+#golferStrategy {padding:0;}
+#mobile {display:block; position:relative; z-index:0;}
+#desktop {display:none;}
+.mobileNav {display:block !important; }
+.desktopNav {display:none;}
+.headerTittle {float:none; position:static; width:100%}
+#sectionNine div:nth-child(3) img { width:99.75%}
+
+.golferGreenSection:after { height:250px}
+#header .headerTittle { left:0}
+#header .th-logo { margin-bottom:70px}	
+.prevArticle a h2, .nextArticle a h2 { height:80px}
+.center_popup iframe, .work_center_popup iframe { width:650px; height:435px}
+.brv-img-container {margin:0 5%; transform:scale(0.6); width:100%;}
+.brv-row {min-height:360px;}	
+.houseContent h2 {padding:100px 0 70px; margin-top:0;}
+.golferStrategyContent p.para-space {margin:100px 0 0 0;}
+}
+
+@media only screen and (min-width:769px) and (max-width:991px) {
+	#sectionNine div:nth-child(3) img { width:99.75%}
+	.golferGreenSection:after { height:250px}
+	brv-img-container {left:-3%;}
+	.brv-img-container {margin: 0 11%;transform: scale(0.75); width: 100%;}	
+}
+
+@media only screen and (min-width:992px) and (max-width:1300px) {
+	.visible-no {display:block !important}
+.visible-yes {display:none !important}
+.brv-row {background:none;}
+	
+	}
+
+@media only screen and (min-width:992px) and (max-width:1110px) {
+	
+	#ql-intro-sec-text .ql-services {
+		margin:20px 0 46px;	
+	}
+	
+.golferIphoneImage {bottom:-18%;}
+.golferIphoneImage img {width:100%;}
+.golferOutcomesImages {width:900px;}
+	/* outcomes padding-top:80px; */
+.image1 {left:0; top:100px; width:100%;}
+.image2 {right:230px; top:0; width:320px;}
+.image3 {bottom:-39px; right:-2px; width:405px;}
+	/*.image1 {left:-150px; width:570px;}*/	
+.golferGreenSection:after {height:330px}
+#golferIntro {min-height:100%}
+.center_popup_box { width:100%; height:100%; background-color:rgba(28,28,28,0.7)}
+.center_popup_box iframe { display: inline-block;vertical-align: middle; width:650px; height:435px; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto}
+.center_popup_close { top:55px}
+#theWork h1 { padding:100px 0}
+.workVideo {  min-height:500px}
+.workVideo .workVideobg { background-attachment:scroll}
+.prevArticle a h2, .nextArticle a h2 { height:80px}
+#sectionNine .brv-gallery-screen img { top:0 !important}
+.work_center_popup_box { width:100%; height:100%; background-color:rgba(0,0,0,0.7)}
+.work_center_popup_box iframe { display: inline-block;vertical-align: middle; width:650px; height:435px; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto;}
+.work_center_popup_close { top:10px}
+.brv-img-container {left:-3%;}
+.house-hand-left {float:left; height:auto; margin-top:-4px; max-width:100%; width:100%;}
+.loan-amount {max-width:100%; width:100%; height:auto; float:left;}
+.house-hand-left {float:left; height:auto; margin-top:0; width:48%;}
+.loan-amount {float:left; height:auto; margin-left:4%;width:45%; position:relative; top:16px;}
+.visible-no {display:none;}
+.visible-yes {display:block;}
+#golferOutcomes {margin:0; padding-top:0;}
+.golferOutcomesContent h2 {padding:170px 0 70px 24px;}
+.houseContent h2 {padding:120px 0 100px;}
+.golferStrategyContent p.para-space {margin:150px 0 0 0;}
+#sectionNine .brv-thumb1-4 {width:40%; height:auto;}
+#sectionNine .brv-thumb1-4 img  {width:100%; height:auto !important;}
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+	.golferIntroContent h1 {padding:0 190px; line-height:54px;}
+	.navbar-nav {float:left;}
+	}
+	
+@media only screen and (min-width:991px) and (max-width:1000px) {
+	.house-text span {margin-left: 29.5%; font-size:30px}
+	}	
+@media only screen and (min-width:1001px) and (max-width:1046px) {
+	.house-text span {margin-left: 31.5%; font-size:30px;}
+	#sectionNine .brv-thumb1-4 {width:40%; height:auto !important;}
+	}
+
+@media only screen and (min-width:1047px) and (max-width:1110px) {
+	.house-text span {margin-left: 33.5%;}
+	#sectionNine .brv-thumb1-4 {width:40%; height:auto !important;}
+	}
+
+@media only screen and (min-width:1111px) and (max-width:1280px) {
+	.golferOutcomesImages {width:930px;}
+	.image1 {left:0; top:0px; width:auto;}
+	.image2 {right:278px; top:21px; width:320px;}
+	.image3 {right:0; bottom:-101px; width:451px}
+.golferGreenSection:after { height:350px}
+.house-hand-left {float:left; height:auto; margin-top:0px; width:48%;}
+.loan-amount {float:left; height:auto; margin-left:4%; width:45%; position:relative; top:16px;}
+.house-text span {margin-left: 34.5%;}
+#sectionNine .brv-thumb1-4 {width:40%;}
+#sectionNine .brv-thumb1-4 img  {width:100%; height:294px !important;}
+.brv-row {min-height: 585px;}
+#sectionNine .brv-thumb1-4 img  {width:100%; height:auto !important;}
+
+}
+
+@media only screen and (min-width:1200px) and (max-width:1280px) {
+.house-hand-left {float:left; height:auto; margin-top:-4px; width:98%;}
+.loan-amount {float:left; height:auto; margin-left:4%; width:98%;}
+#sectionNine .brv-thumb1-4 {width:40%; height:auto !important;}
+}
+
+@media only screen and (min-width:1281px) and (max-width:1399px){
+	.golferGreenSection:after { height:450px}
+	.house-hand-left {float:left; height:auto; margin-top:-4px; width:98%;}
+.loan-amount {float:left; height:auto; margin-left:4%; width:98%;}
+}
+
+@media only screen and (min-width:1400px) and (max-width:1599px) {
+	.golferGreenSection:after { height:500px}
+	.house-hand-left {float:left; height:auto; margin-top:-4px; width:98%;}
+.loan-amount {float:left; height:auto; margin-left:4%; width:98%;}
+}
+
+@media only screen and (min-width:1600px) and (max-width:1799px) {
+	.golferGreenSection:after { height:550px}
+	.house-hand-left {float:left; height:auto; margin-top:-4px; width:98%;}
+.loan-amount {float:left; height:auto; margin-left:4%; width:98%;}
+}
+
+@media only screen and (min-width:1800px) and (max-width:1920px) {
+	.golferGreenSection:after { height:650px}
+	.house-hand-left {float:left; height:auto; margin-top:-4px; width:98%;}
+.loan-amount {float:left; height:auto; margin-left:4%; width:98%;}
+}
+
+/** for iPhone5 portrait **/
+@media only screen and (min-device-width:320px) and (max-device-width:408px) and (orientation:portrait) {
+	
+	#ql-intro-sec-text { width:300px;height:330px}
+	#ql-intro-sec-text .ql-heading-wwd { font-size:15px}
+	#ql-intro-sec-text h2 { font-size:30px;padding:0 53px;line-height:30px; margin:15px 0;}
+	#ql-intro-sec-text .ql-services { padding:0;margin:0 0 20px}
+	#ql-intro-sec-text .ql-services ul li { width:47px}
+	#ql-intro-sec-text .ql-services ul li img { transform:scale(0.5)}
+	#ql-intro-sec-text .ql-services ul li .row { margin-top:0px; font-size:8px}
+	#ql-intro-sec-text .ql-short-text { padding:0; font-size:10px; line-height:15px}
+	
+	#golferIntro .show_center_alert:hover, .workVideo .work_show_center_alert:hover { background-position:-27px 50%}	
+	#golferIntro .center_popup_box iframe,.workVideo .work_center_popup_box iframe { width:290px; height:190px}	
+	#th-nav .th-nav-close { margin-right:15px}
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:408px) and (orientation:landscape) {
+	
+	#ql-intro-sec-text { width:100%;height:320px;transform:scale(0.65);-moz-transform:scale(0.65);-webkit-transform:scale(0.65)}
+	#ql-intro-sec-text h2 { font-size:30px;padding:0; margin:15px 0}
+	#ql-intro-sec-text .ql-services { padding:0; margin:0 0 20px}
+	
+	#golferIntro { min-height:100%}
+	#golferIntro .show_center_alert:hover, .workVideo .work_show_center_alert:hover { background-position:-27px 50%}	
+	#golferIntro .center_popup_box iframe, .workVideo .work_center_popup_box iframe { width:250px; height:150px}
+	.workVideo { min-height:200px}
+}
+
+
+/** for iPhone6 portrait **/
+@media only screen and (min-device-width:375px) and (max-device-width:409px) and (orientation:portrait) {
+	
+	#ql-intro-sec-text { width:360px;height:390px}
+	#ql-intro-sec-text .ql-heading-wwd { font-size:15px}
+	#ql-intro-sec-text h2 { font-size:40px;padding:0 63px;line-height:35px; margin:15px 0}
+	#ql-intro-sec-text .ql-services { margin:20px 0}
+	#ql-intro-sec-text .ql-services ul li { width:58px}
+	#ql-intro-sec-text .ql-services ul li img { transform:scale(0.6)}
+	#ql-intro-sec-text .ql-services ul li .row { margin-top:10px}
+	#ql-intro-sec-text .ql-short-text { padding:0 10px; font-size:12px; line-height:20px}
+	
+	#golferIntro .show_center_alert:hover, .workVideo .work_show_center_alert:hover { background-position:-27px 50%}	
+	#golferIntro .center_popup_box iframe, .workVideo .work_center_popup_box iframe { width:300px; height:200px}
+}
+
+@media only screen and (min-device-width:375px) and (max-device-width:409px) and (orientation:landscape) {
+	
+	#ql-intro-sec-text { height:300px; transform:scale(0.7);-moz-transform:scale(0.7);-webkit-transform:scale(0.7)}
+	#ql-intro-sec-text .ql-services { padding:0; margin:0 0 20px}
+	
+	#golferIntro { min-height:100%}
+	#golferIntro .show_center_alert:hover, .workVideo .work_show_center_alert:hover { background-position:-27px 50%}	
+	#golferIntro .center_popup_box iframe, .workVideo .work_center_popup_box iframe { width:300px; height:200px}
+	.workVideo { min-height:200px}
+	
+	#golferOutcomes > .container { padding:0 30px}
+	
+	.house-text { font-size:26px !important}
+	.house-text span { font-size:25 !important}
+	
+	.golferStrategyContent p { line-height:28px}
+	.golferStrategyContent > .container { padding:0 40px}
+}
+
+
+/** for iPhone6Plus portrait **/
+@media only screen and (min-device-width:410px) and (max-device-width:480px) and (orientation:portrait) {
+	
+	#ql-intro-sec-text { height:450px}
+	#ql-intro-sec-text h2 { font-size:45px;padding:0 75px;line-height:40px}
+	#ql-intro-sec-text .ql-services { padding:0; margin:0 0 20px}
+	#ql-intro-sec-text .ql-services ul li { width:60px}
+	#ql-intro-sec-text .ql-services ul li img { transform:scale(0.6)}
+	#ql-intro-sec-text .ql-short-text { padding:0 15px}
+	
+	.golferOutcomesContent h1,.golferStrategyContent h1 {font-size:33px}
+	
+	#golferIntro .show_center_alert:hover { background-position:-27px 50%}	
+	.center_popup_box iframe, .workVideo .work_center_popup_box iframe { width:350px; height:250px}
+	.golferIntroContent h1 {margin:33px 20px 20px;}
+	#sectionNine {min-height:190px;}
+	.golferOutcomesImages {width:310px; min-height:135px;}
+	.image1 {width:300px;}
+	.image2 {top:-27px; width:105px;}
+	.image3 {bottom:-58px; right:-5px; width:136px;}
+}
+
+/** for iPhone6Plus landscape **/
+@media only screen and (min-device-width:414px) and (max-device-width:480px) and (orientation:landscape) {
+	
+	#ql-intro-sec-text { height:340px; transform:scale(0.7);-moz-transform:scale(0.7);-webkit-transform:scale(0.7)}
+	#ql-intro-sec-text .ql-services { padding:0; margin:0 0 20px}
+	
+	#golferIntro .show_center_alert:hover, .workVideo .work_show_center_alert:hover { background-position:-27px 50%}
+	.center_popup_box iframe, .workVideo .work_center_popup_box iframe { width:350px; height:250px}
+	
+	.golferIntroContent h1 {margin:33px 0 20px 0;}
+	#sectionNine {min-height:338px;}
+	
+	#golferIntro { min-height:100%}
+	
+	.workVideo { min-height:200px}
+	
+	.golferOutcomesContent,
+	.golferStrategyContent > .container { padding:0 100px}
+	
+	#th-nav .th-nav-close { margin-top:13px;margin-right:30px}
+	#th-nav .th-vm { height:260px;padding-right:15px}
+	#th-nav .th-nav-close { margin-top:15px}
+	#th-nav ul:nth-of-type(1) { line-height:35px}
+	#th-nav ul:nth-of-type(1) li a { font-size:25px}
+	#th-nav ul:nth-of-type(2) { margin:10px 0}
+	#th-nav ul:nth-of-type(2) li { width:100%;}
+	#th-nav ul:nth-of-type(2) li a,
+	#th-nav ul:nth-of-type(3) li a { line-height:15px}
+	
+	/*#ql-intro-img {background-image:none; background-color:red;}*/
+}
+
+
+
+/** for iPad Mini portrait **/
+@media only screen and (min-device-width:750px) and (max-device-width:800px) and (orientation:portrait) {
+	
+	.golferStrategyContent > .container { padding:0 20px}
+	
+	#ql-intro-img {/**background:url(../images/golfer-intro-bg.png) no-repeat center**/; background-attachment:scroll; background-size:cover;}
+	.golferOutcomesContent {padding:0px; width:100%; margin:0 auto;}
+	.golferIphoneImage {bottom:-15%; right:0; width:90%;}
+	#sectionNine {min-height:354px;}
+	#articleNavigation {min-height:167px;}
+	.golferIntroContent h1 {font-size:55px; margin:50px 0 45px 0;  padding:0 70px; line-height:54px;}
+	.popupLink a {background:#fff url("../images/play-btn.png") no-repeat scroll 17px 50%; border-radius:50px; height:40px; margin:0 0 18px;width:40px;}
+	.brv-img-container { margin: 0 5% 0 10.5%; transform:scale(0.70); -webkit-transform:scale(0.70); width: 100%;}
+	.golferGreenSection {margin-bottom: 100px;}
+	.brv-row {min-height: 400px;}
+	#theWork h1 { padding: 100px 0;}
+	#sectionNine .brv-thumb1-1 {width:100%;}
+#sectionNine .brv-thumb1-2 {width:100%;}
+#sectionNine .brv-thumb1-3 {width:50%;}
+#sectionNine .brv-thumb1-4 {width:50%;}
+#sectionNine .brv-gallery-thumb img {width:100%;}
+.houseContent h2 {padding:140px 0;}
+}
+
+@media only screen and (min-device-width:800px) and (max-device-width: 850px) and (orientation:landscape) {
+.golferIntroContent h1 {padding:0 190px; line-height:54px;}
+#theWork h1 {font-size: 14px; padding: 100px 0;	}
+#golferOutcomes {margin:0; padding: 0 0}
+.golferOutcomesContent h2 {padding: 100px 0 90px 24px;}
+.houseContent h2 {padding:100px 0;}
+.brv-img-container {margin:0 12%; transform:scale(0.75); -webkit-transform:scale(0.75); width:100%;}
+#golferStrategy .brv-row {min-height:430px;}
+.golferStrategyContent p.para-space {margin:150px 0 0;}
+}
+
+@media only screen and (min-device-width:850px) and (max-device-width: 900px) and (orientation:landscape) {
+.golferIntroContent h1 {padding:0 190px; line-height:54px;}
+#theWork h1 {font-size: 14px; padding: 100px 0;	}
+#golferOutcomes {margin:0; padding: 0 0}
+.golferOutcomesContent h2 {padding: 150px 0 110px 24px;}
+.houseContent h2 {padding:140px 0;}
+.brv-img-container {margin: 0 15%; transform:scale(0.75); -webkit-transform:scale(0.75); width:100%;}
+#golferStrategy .brv-row {min-height:430px;}
+.golferStrategyContent p.para-space {margin:150px 0 0;}
+}
+
+@media only screen and (min-device-width:901px) and (max-device-width: 950px) and (orientation:landscape) {
+.brv-img-container {margin: 0 17%; transform: scale(0.85); -webkit-transform: scale(0.85); width: 100%;}
+
+}
+@media only screen and (min-device-width:951px) and (max-device-width: 1000px) and (orientation:landscape) {
+.brv-img-container {margin: 0 22%; transform: scale(0.85); -webkit-transform: scale(0.85); width: 100%;}
+.brv-row {min-height:550px;}
+}
+
+/** for iPad Mini landscape **/
+@media only screen and (min-device-width:750px) and (max-device-width:800px) and (orientation:landscape) {
+	#ql-intro-img {background:url(../images/golfer-intro-bg.png) no-repeat center; background-attachment:scroll; background-size:cover;}
+	#golferIphone {background-attachment:scroll;}
+	/*.golferIphoneImage {bottom:-20%; width:65%; right:0px;}
+	.golferIphoneImage img {width:100%;}*/
+	#theWork h1 {margin:0px;}
+	#sectionNine {min-height:471px;}
+
+}
+
+
+
+/** for iPad Air portrait retina display **/
+@media only screen and (max-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) and (-webkit-device-pixel-ratio: 2) {
+	.center_popup_box iframe, .work_center_popup_box iframe {width: 710px; height: 466px;}
+	#theWork h1 {font-size: 14px; padding:100px 0;	}
+	
+}
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+	#th-nav .th-nav-close {margin-top:13px; margin-right:15px; z-index: 99999999; position:absolute; right:0px;}
+	#th-nav .th-vm {max-height:210px; padding-right:25px; top:-80px;}
+	#th-nav ul:nth-child(1) {line-height:30px;}
+	#th-nav ul:nth-child(1) li a {font-size:20px;}
+	#th-nav ul:nth-child(2) li {/**width:49.5%;**/width:100%; float:left;}
+	#th-nav ul:nth-child(2) li a, #th-nav ul:nth-child(3) li a {line-height:20px;}
+	#th-nav ul:nth-child(1) {margin:0 0 15px 0;}
+	#th-nav ul:nth-child(2) {margin:9px 0 15px 0;}
+	.houseContent h2 {padding:70px 0 70px;}
+	.golferStrategyContent p.para-space {margin: 100px 0 0 0;}
+	.golferStrategyContent p.para-space { margin: 100px 0 0 0;}
+}
+
+@media only screen and (min-device-width: 569px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+#th-nav .th-vm {top:-90px !important;}
+}
+
+@media only screen and (min-width:569px) and (max-width:736px) {
+	#th-nav .th-vm {top:-90px;}
+	}
+
+@media only screen and (min-width:641px) and (max-width:768px) {
+	.golferOutcomesImages {width:600px; min-height:170px; margin:50px auto 180px auto;}
+	#golferIphone {background:url(../images/mobo-golferIphone.png) no-repeat scroll center top / cover;}
+	/*.golferIphoneImage {bottom:-14%; right:0; width:75%;}*/
+	/*.golferIphoneImage img {width:100%;}*/
+	.workVideobg {background:url(../images/mobo-work-video-bg.png) no-repeat scroll center; background-attachment:scroll; background-size:cover;}
+	#golferStrategy {padding:0;}
+	.houseContent h2 {padding:100px 0 70px;}
+	.navbar-nav {float:none;}
+	
+}
+
+
+@media only screen and (min-width:769px) and (max-width:991px) {
+	.golferOutcomesImages {width:600px; min-height:170px; margin:100px auto 180px auto;}
+	.image1 {left:0; top:0; width:598px;}
+	/*.image2 {right:166px; top:-70px; width:210px;}*/
+	.image2 {right:166px; top:-54px; width:193px;}
+	.image3 {bottom:-188px; right:0; width:266px;}
+	.image4 {bottom:-88px; right:7px; width:150px; z-index:1;}
+	#golferIphone {background:url(../images/mobo-golferIphone.png) no-repeat scroll center top / cover;}
+	.golferIphoneImage {bottom:-14%; right:0; width:75%;}
+	.golferIphoneImage img {width:100%;}
+	
+	.workVideobg {background:url(../images/mobo-work-video-bg.png) no-repeat scroll center; background-attachment:scroll; background-size:cover;}
+	#golferStrategy {padding:0;}
+}
+
+@media only screen and (min-width:1025px) and (max-width:1400px) and (min-height:600px) and (max-height:800px) {
+	#ql-intro-sec-text .ql-services {
+		margin:20px 0 46px;	
+	}
+	
+	.center_popup_box, .center_popup_box iframe {
+	    width: 740px;
+	    height: 500px;
+	}
+	
+	html.desktop .center_popup_box { height:499px}
+	html.desktop.no-smil.win .center_popup_box iframe { width:100%;height:500px}
+	html.desktop.no-smil.gecko.win .center_popup_box { width:739px}
+	
+	/* For Macbook Safari */
+	html.mac.desktop.safari .center_popup_box { width:739px;height:499px}
+	html.mac.desktop.safari .center_popup_box iframe { width:741px}	
+	
+}

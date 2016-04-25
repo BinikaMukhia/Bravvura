@@ -1,0 +1,53 @@
+
+.brv-tab-slider {
+	float:left;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:0;
+	background:url(../images/10.jpg) #000;
+	background-size:cover;
+	}
+
+.brv-tab-slider .brv-slides {
+	position:absolute;
+	top:0;
+	left:0;
+	float:left;
+	width:100%;
+	height:100%;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+	.brv-tab-slider .brv-slide-one { background-image:url(../images/1.jpg);left:100%;top:100%}
+	.brv-tab-slider .brv-slide-two { background-image:url(../images/2.jpg);right:100%;top:100%}
+	.brv-tab-slider .brv-slide-three { background-image:url(../images/3.jpg);left:100%}
+	.brv-tab-slider .brv-slide-four { background-image:url(../images/4.jpg);left:-100%}
+	.brv-tab-slider .brv-slide-five { background-image:url(../images/5.jpg);top:-100%}
+	.brv-tab-slider .brv-slide-six { background-image:url(../images/6.jpg);top:100%}
+	.brv-tab-slider .brv-slide-seven { background-image:url(../images/7.jpg);left:100%;top:100%}
+	.brv-tab-slider .brv-slide-eight { background-image:url(../images/8.jpg);left:-100%;top:-100%}
+	.brv-tab-slider .brv-slide-nine { background-image:url(../images/9.jpg);left:100%}
+	.brv-tab-slider .brv-slide-ten { background-image:url(../images/10.jpg);left:-100%}
+}
+
+@media only screen and (min-width:320px) and (max-width:767px){	
+	
+	.brv-tab-slider .brv-slide-one { background-image:url(../images/mob-1.jpg)}
+	.brv-tab-slider .brv-slide-two { background-image:url(../images/mob-2.jpg)}
+	.brv-tab-slider .brv-slide-three { background-image:url(../images/mob-3.jpg)}
+	.brv-tab-slider .brv-slide-four { background-image:url(../images/mob-4.jpg)}
+	.brv-tab-slider .brv-slide-five { background-image:url(../images/mob-5.jpg)}
+	.brv-tab-slider .brv-slide-six { background-image:url(../images/mob-6.jpg)}
+	.brv-tab-slider .brv-slide-seven { background-image:url(../images/mob-7.jpg)}
+	.brv-tab-slider .brv-slide-eight { background-image:url(../images/mob-8.jpg)}
+	.brv-tab-slider .brv-slide-nine { background-image:url(../images/mob-9.jpg)}
+	.brv-tab-slider, .brv-tab-slider .brv-slide-ten { background-image:url(../images/mob-10.jpg)}
+	
+	}
+

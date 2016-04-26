@@ -707,10 +707,15 @@ function fixhidetop() {
 }
 
 
-
+if ( /iPad/i.test(navigator.userAgent) ){
+	//
+}
+else{
  var gotofirst = $Jssor$.$GetElement("gotofirst");
      $Jssor$.$AddEvent(gotofirst, "click", GoTo);
 
       function GoTo() {
         jssor_slider1.$GoTo(jssor_slider1.$CurrentIndex() + 1);
     }
+	
+}

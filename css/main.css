@@ -1,4 +1,4 @@
-﻿#forImageLoading{width:0;height:0;overflow:hidden;position:absolute;z-index:-9999;}
+#forImageLoading{width:0;height:0;overflow:hidden;position:absolute;z-index:-9999;}
 @font-face { font-family: 'Conv_BebasNeue'; src: url('../fonts/BebasNeue.eot'); src: local('☺'), url('../fonts/BebasNeue.woff') format('woff'), url('../fonts/BebasNeue.ttf') format('truetype'), url('../fonts/BebasNeue.svg') format('svg'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'Conv_WorkSans-Light'; src: url('../fonts/WorkSans-Light.eot'); src: local('☺'), url('../fonts/WorkSans-Light.woff') format('woff'), url('../fonts/WorkSans-Light.ttf') format('truetype'), url('../fonts/WorkSans-Light.svg') format('svg'); font-weight: normal; font-style: normal; }
 
@@ -266,6 +266,12 @@ img.bravvuraLogo.smalllogo { display:none}
     html.notDesktop.ipad.tablet.portrait body main>section .bcg.sec3{background-image:url(../images/bg-sec-3-mob.jpg);background-position: 0 0 !important;}
     html.notDesktop.ipad.tablet.portrait body main>section .bcg.sec5{background-image:url(../images/bg-sec-5-mob.jpg);background-position: 0 bottom !important;}
     html.notDesktop.ipad.tablet.portrait body main>section .bcg.sec7{background-image:url(../images/bg-sec-7-mob.jpg);background-position: 0 -120px !important;}
+	
+	html.notDesktop.ipad.tablet.portrait #slide-1 a.downArrowImg { bottom: 100px;}
+	html.notDesktop.ipad.tablet.portrait #slide-1 a.downArrowImg:hover { bottom:105px;}
+	html.notDesktop.ipad.tablet.landscape .firstSectionText { font-size:110px;}
+	html.notDesktop.ipad.tablet.landscape #slide-1 a.downArrowImg { bottom: 90px;}
+	html.notDesktop.ipad.tablet.landscape #slide-1 a.downArrowImg:hover { bottom:95px;}
 }
 @media all and (max-width:767px){
     html.notDesktop .topFixImg{display:block;}
